@@ -1,0 +1,67 @@
+Playful Sparkle - Google Product Review Feed
+
+Playful Sparkle - Google Product Review Feed is a powerful extension for
+OpenCart 4.x+ that allows store owners to export and submit customer product
+reviews to their Google Merchant Center account. This enables the display of
+verified user-generated reviews alongside product listings in Google Shopping
+and other Google services.
+
+About Google Merchant Center
+
+Google Merchant Center is a platform where businesses upload their product data
+to make it available across Google Shopping and other Google surfaces.
+In addition to product feeds, Google also supports product review feeds, which
+allow merchants to display aggregated customer ratings and reviews.
+
+The Google Product Review Feed extension complements your existing product data
+feed by submitting customer reviews collected from your OpenCart store to
+Google Merchant Center. This enhances product listings with social proof and
+contributes to better visibility and trust on Google's shopping network.
+
+Features
+
+- Opt-in Integration: Prompt customers to participate in a Google survey after
+  checkout, allowing them to rate their shopping experience and contribute to
+  your seller rating.
+- Badge Integration: Display the official Google Customer Reviews badge on your
+  storefront. This badge shows your average seller rating and confirms your
+  active participation in the Google Customer Reviews program.
+- Product Review Feed Generation: Generates a compliant product review feed that
+  can be submitted to Google Merchant Center for use in Google Shopping and
+  related services.
+- Frontend authentication: Secure access to the review feed by preventing
+  unauthorized users from accessing sensitive data.
+- Compatibility: Integrates smoothly with OpenCart 4.x+, supporting a range of
+  online store setups.
+- Multi-store Support: Supports multi-store setups by default, making it easy
+  to integrate across multiple OpenCart stores.
+- Multilingual Support: Ready for international use with languages including
+  Čeština (cs-cz), Deutsch (de-de), English (GB) (en-gb), English (US) (en-us),
+  Español (es-es), Français (fr-fr), Magyar (hu-hu), Italiano (it-it),
+  Русский (ru-ru), Ελληνικά (el-GR), العربية (ar), Polski (pl-pl),
+  Türkçe (tr-tr) (community contribution Furkan Başkak), and Slovenčina (sk-sk).
+
+For more information, visit the extension's GitHub page
+at https://github.com/playfulsparkle/oc4_product_review_feed.git.
+
+Demo frontend: https://opencart4.playfulsparkle.com/
+Demo backend: https://opencart4.playfulsparkle.com/admin/
+
+Installation Instructions
+
+1. Download the latest version from the OpenCart Marketplace.
+2. Log in to your OpenCart admin panel.
+3. Navigate to Extensions > Installer.
+4. Click the Upload button and upload the ps_product_review_feed.ocmod.zip file.
+5. Locate the extension in the Installed Extensions list and click the
+   Install button.
+6. Navigate to Extensions > Extensions and select Feeds from the Choose the
+   extension type dropdown list.
+7. Locate the extension in the Feeds list and click the Install button.
+8. Click the Edit button, configure the extension parameters, and click the Save
+   button to save your settings.
+
+Support & Inquiries
+
+For assistance or inquiries related to this extension, please open an issue in
+the extension repository or contact us via email at support@playfulsparkle.com
