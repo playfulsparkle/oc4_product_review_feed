@@ -1,22 +1,29 @@
 Playful Sparkle - Google Product Review Feed
 
-Playful Sparkle - Google Product Review Feed is a powerful extension for
-OpenCart 4.x+ that allows store owners to export and submit customer product
-reviews to their Google Merchant Center account. This enables the display of
-verified user-generated reviews alongside product listings in Google Shopping
-and other Google services.
+Playful Sparkle - Google Product Review Feed is an essential extension for
+OpenCart 4.x+ that allows store owners to automatically generate and submit a
+product review feed from their OpenCart store to their Google Merchant
+Center account. This extension enables you to display verified customer reviews
+from your store on Google Shopping and other Google platforms, enhancing trust
+and visibility for your products.
 
-About Google Merchant Center
+## About Google Merchant Center
 
-Google Merchant Center is a platform where businesses upload their product data
-to make it available across Google Shopping and other Google surfaces.
-In addition to product feeds, Google also supports product review feeds, which
-allow merchants to display aggregated customer ratings and reviews.
+Google Merchant Center is a platform provided by Google where businesses
+upload their product data to make it available across Google Shopping,
+Google Search, and other Google services. In addition to product data,
+Google Merchant Center also supports product review feeds. This feature allows
+merchants to display aggregated customer ratings and reviews for their products,
+improving product visibility, increasing customer trust, and boosting
+shopper engagement.
 
-The Google Product Review Feed extension complements your existing product data
-feed by submitting customer reviews collected from your OpenCart store to
-Google Merchant Center. This enhances product listings with social proof and
-contributes to better visibility and trust on Google's shopping network.
+With the Google Product Review Feed extension, your OpenCart store will
+generate a product review feed containing customer reviews collected from
+your store. You can submit this feed URL to your Google Merchant Center account.
+Google Merchant Center will periodically fetch updated reviews from the feed
+according to the frequency you set in your Google Merchant Center settings.
+This ensures that your product listings are consistently updated with the
+latest customer reviews.
 
 Features
 
