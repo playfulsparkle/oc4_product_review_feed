@@ -246,7 +246,9 @@ class PsProductReviewFeed extends \Opencart\System\Engine\Controller
 
         $is_oc_4_1 = version_compare(VERSION, '4.1.0.0', '>=');
 
-        $this->session->data['ps_order_id'] = $this->session->data['order_id'];
+        if (isset($this->session->data['order_id'])) {
+            $this->session->data['ps_order_id'] = $this->session->data['order_id'];
+        }
 
         $ps_user_info = [];
 
@@ -262,9 +264,9 @@ class PsProductReviewFeed extends \Opencart\System\Engine\Controller
             $ps_user_info = array_merge($ps_user_info, array_filter($this->session->data['shipping_address']));
         }
 
-        if ($this->customer->isLogged()) {
-            $this->session->data['ps_email'] = $this->customer->getEmail();
-        } else if (isset($this->session->data['customer']['email'])) {
+        if ($this->customer->isLogged() && $ps_email = $this->customer->getEmail()) {
+            $this->session->data['ps_email'] = $ps_email;
+        } else if (isset($this->session->data['customer']['email']) && $this->session->data['customer']['email']) {
             $this->session->data['ps_email'] = $this->session->data['customer']['email'];
         } else {
             $this->session->data['ps_email'] = null;
@@ -328,21 +330,40 @@ class PsProductReviewFeed extends \Opencart\System\Engine\Controller
         $ps_locale = $this->config->get('config_language'); // e.g., "en" or "en-gb"
 
         if (strpos($ps_locale, '-') !== false) {
-            [$lang, $region] = explode('-', $ps_locale, 2); // Convert "en-gb" -> "en_GB"
+            [$ps_lang, $ps_region] = explode('-', $ps_locale, 2); // Convert "en-gb" -> "en_GB"
 
-            $ps_locale = strtolower($lang) . '_' . strtoupper($region);
+            $ps_locale = strtolower($ps_lang) . '_' . strtoupper($ps_region);
         } else {
             $ps_locale = strtolower($ps_locale); // Keep as-is (e.g., "en")
         }
 
         $args['ps_lang'] = $ps_locale;
 
+        if (isset($this->session->data['ps_order_id'])) {
+            $args['ps_order_id'] = $this->session->data['ps_order_id'];
+        } else {
+            $args['ps_order_id'] = null;
+        }
 
-        $args['ps_order_id'] = $this->session->data['ps_order_id'];
-        $args['ps_email'] = $this->session->data['ps_email'];
-        $args['ps_delivery_country'] = $this->session->data['ps_delivery_country'];
+        if (isset($this->session->data['ps_email'])) {
+            $args['ps_email'] = $this->session->data['ps_email'];
+        } else {
+            $args['ps_email'] = null;
+        }
+
+        if (isset($this->session->data['ps_delivery_country'])) {
+            $args['ps_delivery_country'] = $this->session->data['ps_delivery_country'];
+        } else {
+            $args['ps_delivery_country'] = null;
+        }
+
         $args['ps_estimated_delivery_date'] = date('Y-m-d', strtotime('+1 day'));
-        $args['ps_products'] = $this->session->data['ps_products'];
+
+        if (isset($this->session->data['ps_products'])) {
+            $args['ps_products'] = $this->session->data['ps_products'];
+        } else {
+            $args['ps_products'] = null;
+        }
 
         unset(
             $this->session->data['ps_order_id'],
