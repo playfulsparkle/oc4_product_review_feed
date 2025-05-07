@@ -91,7 +91,7 @@ class PsProductReviewFeed extends \Opencart\System\Engine\Model
                                 "email": "{{ ps_email }}",
                                 "delivery_country": "{{ ps_delivery_country }}",
                                 "estimated_delivery_date": "{{ ps_estimated_delivery_date }}",
-                                {% if ps_products %}"products": [{{ ps_products}}]{% endif %}
+                                "products": [{{ ps_products}}]
                             }
                         );
                     });
