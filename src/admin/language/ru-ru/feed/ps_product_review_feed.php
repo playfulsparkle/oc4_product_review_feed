@@ -3,7 +3,6 @@
 $_['heading_title']              = 'Playful Sparkle - Google Product Review Feed';
 $_['heading_integrations']       = 'Интеграции';
 $_['heading_authentication']     = 'Аутентификация';
-$_['heading_fix']                = 'Исправление распространенных ошибок';
 $_['heading_getting_started']    = 'Начало работы';
 $_['heading_setup']              = 'Настройка Google Product Review Feed';
 $_['heading_troubleshot']        = 'Распространенные проблемы и их устранение';
@@ -33,9 +32,6 @@ $_['entry_active_store']         = 'Активный магазин';
 $_['opt_in_integration']         = 'Интеграция Opt-in';
 $_['badge_integration']          = 'Интеграция Badge';
 $_['entry_merchant_id']          = 'Merchant ID';
-
-// Button
-$_['button_fix_event_handler']   = 'Исправить обработчик событий';
 
 // Help
 $_['help_copy']                  = 'Копировать URL';

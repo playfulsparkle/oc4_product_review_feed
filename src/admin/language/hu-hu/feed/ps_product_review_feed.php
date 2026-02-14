@@ -3,7 +3,6 @@
 $_['heading_title']                = 'Playful Sparkle - Google Product Review Feed';
 $_['heading_integrations']         = 'Integrációk';
 $_['heading_authentication']       = 'Hitelesítés';
-$_['heading_fix']                  = 'Gyakori hibák javítása';
 $_['heading_getting_started']      = 'Első lépések';
 $_['heading_setup']                = 'Google Product Review Feed beállítása';
 $_['heading_troubleshot']          = 'Gyakori hibaelhárítás';
@@ -33,9 +32,6 @@ $_['entry_active_store']           = 'Aktív áruház';
 $_['opt_in_integration']           = 'Opt-in Integration';
 $_['badge_integration']            = 'Badge Integration';
 $_['entry_merchant_id']            = 'Merchant ID';
-
-// Button
-$_['button_fix_event_handler']     = 'Event Handler javítása';
 
 // Help
 $_['help_copy']                    = 'URL másolása';

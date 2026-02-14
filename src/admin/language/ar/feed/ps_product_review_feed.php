@@ -3,7 +3,6 @@
 $_['heading_title']               = 'Playful Sparkle - Google Product Review Feed';
 $_['heading_integrations']        = 'عمليات التكامل';
 $_['heading_authentication']      = 'المصادقة';
-$_['heading_fix']                 = 'إصلاح الأخطاء الشائعة';
 $_['heading_getting_started']     = 'البدء';
 $_['heading_setup']               = 'إعداد موجز مراجعات منتجات جوجل';
 $_['heading_troubleshot']         = 'استكشاف الأخطاء الشائعة';
@@ -33,9 +32,6 @@ $_['entry_active_store']          = 'المتجر النشط';
 $_['opt_in_integration']          = 'تكامل الاشتراك (Opt-in)';
 $_['badge_integration']           = 'تكامل الشارة (Badge)';
 $_['entry_merchant_id']           = 'معرف التاجر';
-
-// Button
-$_['button_fix_event_handler']    = 'إصلاح معالج الحدث';
 
 // Help
 $_['help_copy']                   = 'نسخ عنوان URL';

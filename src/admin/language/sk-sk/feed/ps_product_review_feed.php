@@ -3,7 +3,6 @@
 $_['heading_title']                = 'Playful Sparkle - Google Product Review Feed';
 $_['heading_integrations']         = 'Integrácie';
 $_['heading_authentication']       = 'Autentifikácia';
-$_['heading_fix']                  = 'Opraviť bežné chyby';
 $_['heading_getting_started']      = 'Začíname';
 $_['heading_setup']                = 'Nastavenie Google Product Review Feed';
 $_['heading_troubleshot']          = 'Bežné riešenie problémov';
@@ -33,9 +32,6 @@ $_['entry_active_store']           = 'Aktívny obchod';
 $_['opt_in_integration']           = 'Opt-in Integration';
 $_['badge_integration']            = 'Badge Integration';
 $_['entry_merchant_id']            = 'Merchant ID';
-
-// Button
-$_['button_fix_event_handler']     = 'Opraviť obsluhu udalostí';
 
 // Help
 $_['help_copy']                    = 'Kopírovať URL';

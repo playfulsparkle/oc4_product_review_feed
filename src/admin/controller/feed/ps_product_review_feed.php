@@ -60,7 +60,6 @@ class PsProductReviewFeed extends \Opencart\System\Engine\Controller
         $separator = version_compare(VERSION, '4.0.2.0', '>=') ? '.' : '|';
 
         $data['action'] = $this->url->link('extension/ps_product_review_feed/feed/ps_product_review_feed' . $separator . 'save', 'user_token=' . $this->session->data['user_token']);
-        $data['fix_event_handler'] = $this->url->link('extension/ps_product_review_feed/feed/ps_product_review_feed' . $separator . 'fixEventHandler', 'user_token=' . $this->session->data['user_token']);
         $data['back'] = $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'] . '&type=feed');
 
         $data['user_token'] = $this->session->data['user_token'];
@@ -211,32 +210,6 @@ class PsProductReviewFeed extends \Opencart\System\Engine\Controller
 
             $this->_unregisterEvents();
         }
-    }
-
-    public function fixEventHandler(): void
-    {
-        $this->load->language('extension/ps_product_review_feed/feed/ps_product_review_feed');
-
-        $json = [];
-
-        if (!$this->user->hasPermission('modify', 'extension/ps_product_review_feed/feed/ps_product_review_feed')) {
-            $json['error'] = $this->language->get('error_permission');
-        }
-
-        if (!$json) {
-            $this->load->model('setting/event');
-
-            $this->_unregisterEvents();
-
-            if ($this->_registerEvents() > 0) {
-                $json['success'] = $this->language->get('text_success');
-            } else {
-                $json['error'] = $this->language->get('error_event');
-            }
-        }
-
-        $this->response->addHeader('Content-Type: application/json');
-        $this->response->setOutput(json_encode($json));
     }
 
     private function _unregisterEvents(): void
