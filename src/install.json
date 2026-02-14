@@ -3,7 +3,7 @@
     "description": "Submit customer product reviews from your store to Google Merchant Center. Includes Opt-in and Badge integration, multi-store support, and feed protection via HTTP authentication.",
     "code": "ps_product_review_feed",
     "license": "GPL",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Playful Sparkle",
     "link": "https://github.com/playfulsparkle/oc4_product_review_feed.git"
   }
