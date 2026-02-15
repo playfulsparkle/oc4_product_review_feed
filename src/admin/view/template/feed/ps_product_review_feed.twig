@@ -169,36 +169,6 @@
 					window.open(linkUrl, '_blank');
 			}
 		});
-
-		$('button[data-fix-action]').on('click', function() {
-			var $this = $(this);
-			var action = $(this).data('fix-action');
-
-			$.ajax({
-				url: action,
-				dataType: 'json',
-				beforeSend: function () {
-					$($this).button('loading');
-				},
-				complete: function () {
-					$($this).button('reset');
-				},
-				success: function (json) {
-					$('.alert-dismissible').remove();
-
-					if (json['error']) {
-						$('#alert').prepend('<div class="alert alert-danger alert-dismissible"><i class="fa-solid fa-circle-exclamation"></i> ' + json['error'] + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
-					}
-
-					if (json['success']) {
-						$('#alert').prepend('<div class="alert alert-success alert-dismissible"><i class="fa-solid fa-circle-check"></i> ' + json['success'] + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
-					}
-				},
-				error: function (xhr, ajaxOptions, thrownError) {
-					console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-				}
-			});
-		});
 	</script>
 </div>
 {{ footer }}
