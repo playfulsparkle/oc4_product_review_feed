@@ -181,18 +181,16 @@ class PsProductReviewFeed extends \Opencart\System\Engine\Controller
      */
     public function install(): void
     {
-        if ($this->user->hasPermission('modify', 'extension/feed')) {
-            $this->load->model('setting/setting');
+        $this->load->model('setting/setting');
 
-            $data = [
-            ];
+        $data = [
+        ];
 
-            $this->model_setting_setting->editSetting('feed_ps_product_review_feed', $data);
+        $this->model_setting_setting->editSetting('feed_ps_product_review_feed', $data);
 
-            $this->load->model('setting/event');
+        $this->load->model('setting/event');
 
-            $this->_registerEvents();
-        }
+        $this->_registerEvents();
     }
 
     /**
@@ -205,11 +203,9 @@ class PsProductReviewFeed extends \Opencart\System\Engine\Controller
      */
     public function uninstall(): void
     {
-        if ($this->user->hasPermission('modify', 'extension/feed')) {
-            $this->load->model('setting/event');
+        $this->load->model('setting/event');
 
-            $this->_unregisterEvents();
-        }
+        $this->_unregisterEvents();
     }
 
     private function _unregisterEvents(): void
