@@ -184,6 +184,12 @@ class PsProductReviewFeed extends \Opencart\System\Engine\Controller
         $this->load->model('setting/setting');
 
         $data = [
+            'feed_ps_product_review_feed_badge_integration' => 0,
+            'feed_ps_product_review_feed_login' => '',
+            'feed_ps_product_review_feed_merchant_id' => '',
+            'feed_ps_product_review_feed_opt_in_integration' => 0,
+            'feed_ps_product_review_feed_password' => '',
+            'feed_ps_product_review_feed_status' => 0,
         ];
 
         $this->model_setting_setting->editSetting('feed_ps_product_review_feed', $data);
