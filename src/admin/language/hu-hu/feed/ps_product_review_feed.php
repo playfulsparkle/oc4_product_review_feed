@@ -9,7 +9,7 @@ $_['heading_contact']              = 'Kapcsolatfelvétel a támogatással';
 $_['text_extension']               = 'Bővítmények';
 $_['text_success']                 = 'Siker: Módosította a Google Product Review Feed adatfolyamot!';
 $_['text_edit']                    = 'Google Product Review Feed szerkesztése';
-$_['text_contact']                 = '<p>További segítségért forduljon támogatási csapatunkhoz:</p><ul><li><strong>Kapcsolat:</strong> <a href="mailto:%s">%s</a></li><li><strong>Dokumentáció:</strong> <a href="%s" target="_blank" rel="noopener noreferrer">Felhasználói dokumentáció</a></li></ul>';
+$_['text_contact']                 = '<p>További segítségért kérjük, lépjen kapcsolatba támogatási csapatunkkal:</p><ul><li><strong>Kapcsolat:</strong> <a href="mailto:%s">%s</a></li><li><strong>Dokumentáció:</strong> <a href="%s" target="_blank" rel="noopener noreferrer">Felhasználói dokumentáció</a></li></ul>';
 
 // Tab
 $_['tab_general']                  = 'Általános';

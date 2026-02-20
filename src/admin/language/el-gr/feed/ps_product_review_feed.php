@@ -9,7 +9,7 @@ $_['heading_contact']              = 'Επικοινωνία με την Υπο�
 $_['text_extension']               = 'Επεκτάσεις';
 $_['text_success']                 = 'Επιτυχία: Έχετε τροποποιήσει τη ροή Google Product Review Feed!';
 $_['text_edit']                    = 'Επεξεργασία Google Product Review Feed';
-$_['text_contact']                 = '<p>Για περαιτέρω βοήθεια, παρακαλούμε επικοινωνήστε με την ομάδα υποστήριξής μας:</p><ul><li><strong>Επικοινωνία:</strong> <a href="mailto:%s">%s</a></li><li><strong>Τεκμηρίωση:</strong> <a href="%s" target="_blank" rel="noopener noreferrer">Τεκμηρίωση Χρήστη</a></li></ul>';
+$_['text_contact']                 = '<p>Για περαιτέρω βοήθεια, επικοινωνήστε με την ομάδα υποστήριξής μας:</p><ul><li><strong>Επικοινωνία:</strong> <a href="mailto:%s">%s</a></li><li><strong>Τεκμηρίωση:</strong> <a href="%s" target="_blank" rel="noopener noreferrer">Τεκμηρίωση χρήστη</a></li></ul>';
 
 // Tab
 $_['tab_general']                  = 'Γενικά';

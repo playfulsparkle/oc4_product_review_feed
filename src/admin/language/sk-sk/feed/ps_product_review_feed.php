@@ -9,7 +9,7 @@ $_['heading_contact']              = 'Kontaktovať podporu';
 $_['text_extension']               = 'Rozšírenia';
 $_['text_success']                 = 'Úspech: Úspešne ste upravili feed Google Product Review Feed!';
 $_['text_edit']                    = 'Upraviť Google Product Review Feed';
-$_['text_contact']                 = '<p>Pre ďalšiu pomoc sa obráťte na náš tím podpory:</p><ul><li><strong>Kontakt:</strong> <a href="mailto:%s">%s</a></li><li><strong>Dokumentácia:</strong> <a href="%s" target="_blank" rel="noopener noreferrer">Používateľská dokumentácia</a></li></ul>';
+$_['text_contact']                 = '<p>Pre ďalšiu pomoc sa, prosím, obráťte na náš tím podpory:</p><ul><li><strong>Kontakt:</strong> <a href="mailto:%s">%s</a></li><li><strong>Dokumentácia:</strong> <a href="%s" target="_blank" rel="noopener noreferrer">Dokumentácia pre používateľov</a></li></ul>';
 
 // Tab
 $_['tab_general']                  = 'Všeobecné';

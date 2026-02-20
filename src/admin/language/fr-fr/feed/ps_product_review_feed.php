@@ -9,7 +9,7 @@ $_['heading_contact']              = 'Contacter le Support';
 $_['text_extension']               = 'Extensions';
 $_['text_success']                 = 'Succès: Vous avez modifié le flux Google Product Review Feed !';
 $_['text_edit']                    = 'Modifier Google Product Review Feed';
-$_['text_contact']                 = '<p>Pour toute assistance supplémentaire, veuillez contacter notre équipe support:</p><ul><li><strong>Contact:</strong> <a href="mailto:%s">%s</a></li><li><strong>Documentation:</strong> <a href="%s" target="_blank" rel="noopener noreferrer">Documentation Utilisateur</a></li></ul>';
+$_['text_contact']                 = '<p>Pour toute assistance supplémentaire, veuillez contacter notre équipe de support :</p><ul><li><strong>Contact :</strong> <a href="mailto:%s">%s</a></li><li><strong>Documentation :</strong> <a href="%s" target="_blank" rel="noopener noreferrer">Documentation utilisateur</a></li></ul>';
 
 // Tab
 $_['tab_general']                  = 'Général';

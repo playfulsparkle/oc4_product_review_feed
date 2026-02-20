@@ -9,7 +9,7 @@ $_['heading_contact']             = 'اتصال الدعم';
 $_['text_extension']              = 'الإضافات';
 $_['text_success']                = 'نجاح: لقد قمت بتعديل موجز مراجعات منتجات جوجل!';
 $_['text_edit']                   = 'تحرير موجز مراجعات منتجات جوجل';
-$_['text_contact']                = '<p>للمزيد من المساعدة، يرجى التواصل مع فريق الدعم لدينا:</p><ul><li><strong>الاتصال:</strong> <a href="mailto:%s">%s</a></li><li><strong>الوثائق:</strong> <a href="%s" target="_blank" rel="noopener noreferrer">وثائق المستخدم</a></li></ul>';
+$_['text_contact']                = '<p>للحصول على مزيد من المساعدة، يرجى التواصل مع فريق الدعم لدينا:</p><ul><li><strong>الاتصال:</strong> <a href="mailto:%s">%s</a></li><li><strong>التوثيق:</strong> <a href="%s" target="_blank" rel="noopener noreferrer">توثيق المستخدم</a></li></ul>';
 
 // Tab
 $_['tab_general']                 = 'عام';
