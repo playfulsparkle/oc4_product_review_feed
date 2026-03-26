@@ -283,7 +283,15 @@ class PsProductReviewFeed extends \Opencart\System\Engine\Controller
         $this->response->setOutput($xml->outputMemory());
     }
 
-    public function eventCatalogControllerCheckoutSuccessBefore(string &$route, array &$args): void
+    /**
+     * Event: catalog/controller/checkout/success/before
+     *
+     * @param string $route
+     * @param array $args
+     *
+     * @return void
+     */
+    public function eventCatalogControllerCheckoutSuccessBefore(&$route, &$args)
     {
         if (!$this->config->get('feed_ps_product_review_feed_status')) {
             return;
@@ -378,7 +386,16 @@ class PsProductReviewFeed extends \Opencart\System\Engine\Controller
         $this->session->data['ps_products'] = !empty($ps_products) ? json_encode($ps_products) : null;
     }
 
-    public function eventCatalogViewCommonSuccessBefore(string &$route, array &$args, string &$template): void
+    /**
+     * Event: catalog/view/common/success/before
+     *
+     * @param string $route
+     * @param array $args
+     * @param string $output
+     *
+     * @return void
+     */
+    public function eventCatalogViewCommonSuccessBefore(&$route, &$args, &$output)
     {
         if (!$this->config->get('feed_ps_product_review_feed_status')) {
             return;
@@ -444,12 +461,22 @@ class PsProductReviewFeed extends \Opencart\System\Engine\Controller
 
         $this->load->model('extension/ps_product_review_feed/feed/ps_product_review_feed');
 
+
         $views = $this->model_extension_ps_product_review_feed_feed_ps_product_review_feed->replaceCatalogViewCommonSuccessBefore($args);
 
-        $template = $this->replaceViews($route, $template, $views);
+        $output = $this->replaceViews($route, $output, $views);
     }
 
-    public function eventCatalogViewProductReviewBefore(string &$route, array &$args, string &$template): void
+    /**
+     * Event: catalog/view/product/review/before
+     *
+     * @param string $route
+     * @param array $args
+     * @param string $output
+     *
+     * @return void
+     */
+    public function eventCatalogViewProductReviewBefore(&$route, &$args, &$output)
     {
         if (!$this->config->get('feed_ps_product_review_feed_status')) {
             return;
@@ -460,9 +487,10 @@ class PsProductReviewFeed extends \Opencart\System\Engine\Controller
 
         $this->load->model('extension/ps_product_review_feed/feed/ps_product_review_feed');
 
+
         $views = $this->model_extension_ps_product_review_feed_feed_ps_product_review_feed->replaceCatalogViewProductReviewBefore($args);
 
-        $template = $this->replaceViews($route, $template, $views);
+        $output = $this->replaceViews($route, $output, $views);
     }
 
     /**
@@ -635,7 +663,7 @@ class PsProductReviewFeed extends \Opencart\System\Engine\Controller
      * If positions are specified, the method performs replacements only at those positions.
      *
      * @param string $route The route associated with the template.
-     * @param string $template The name of the template to be processed.
+     * @param string|null $template The name of the template to be processed.
      * @param array $views An array of associative arrays where each associative array contains:
      *                     - string 'search': The string to search for in the template.
      *                     - string 'replace': The string to replace the 'search' string with.
@@ -645,8 +673,16 @@ class PsProductReviewFeed extends \Opencart\System\Engine\Controller
      *
      * @return mixed The modified template content after performing the replacements.
      */
-    protected function replaceViews(string $route, string $template, array $views): mixed
+    protected function replaceViews(string $route, string|null $template, array $views): mixed
     {
+        if (is_null($template)) {
+            $template = '';
+        }
+
+        if (empty($views)) {
+            return $this->getTemplateBuffer($route, $template);
+        }
+
         $output = $this->getTemplateBuffer($route, $template);
 
         foreach ($views as $view) {
