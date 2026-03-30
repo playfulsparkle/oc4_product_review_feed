@@ -18,7 +18,7 @@ With the **Google Product Review Feed** extension, your OpenCart store will gene
 - **Frontend authentication**: Secure access to the review feed by preventing unauthorized users from accessing sensitive data.
 - **Compatibility**: Integrates smoothly with OpenCart 4.x+, supporting a range of online store setups.
 - **Multi-store Support**: Supports multi-store setups by default, making it easy to integrate across multiple OpenCart stores.
-- **Multilingual Support**: Ready for international use with languages including العربية (ar), Български (bg), 中文(简体) (zh-cn), 中文(繁體) (zh-tw), Čeština (cs-cz), English (UK) (en-gb), English (US) (en-us), Français (fr-fr), Deutsch (de-de), Ελληνικά (el-gr), Magyar (hu-hu), Italiano (it-it), 日本語 (ja), 한국어 (ko-kr), Polski (pl-pl), Português (Brasil) (pt-br), Русский (ru-ru), Slovenčina (sk-sk), Español (es-es), and Türkçe (tr-tr).
+- **Multilingual Support**: Ready for international use with languages including العربية (ar), فارسی (fa-ir), Български (bg), 中文(简体) (zh-cn), 中文(繁體) (zh-tw), Čeština (cs-cz), English (UK) (en-gb), English (US) (en-us), Français (fr-fr), Deutsch (de-de), Ελληνικά (el-gr), Magyar (hu-hu), Italiano (it-it), 日本語 (ja), 한국어 (ko-kr), Polski (pl-pl), Português (Brasil) (pt-br), Русский (ru-ru), Slovenčina (sk-sk), Español (es-es), and Türkçe (tr-tr).
 
 ---
 
@@ -37,7 +37,7 @@ With the **Google Product Review Feed** extension, your OpenCart store will gene
 
 ## Support & Inquiries
 
-For assistance or inquiries related to this extension, please open an issue on this repository or contact us via email at [support@playfulsparkle.com](mailto:support@playfulsparkle.com).
+For assistance or inquiries related to this extension, please open an issue on this repository, visit our [url=https://support.playfulsparkle.com]support website[/url], or contact us via email at [support@playfulsparkle.com](mailto:support@playfulsparkle.com).
 
 ---
 

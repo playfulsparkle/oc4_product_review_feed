@@ -9,7 +9,7 @@ $_['heading_contact']              = 'Destek İletişim';
 $_['text_extension']               = 'Eklentiler';
 $_['text_success']                 = 'Başarılı: Google Product Review Feed beslemesini değiştirdiniz!';
 $_['text_edit']                    = 'Google Product Review Feed Düzenle';
-$_['text_contact']                 = '<p>Daha fazla yardım için lütfen destek ekibimize ulaşın:</p><ul><li><strong>İletişim:</strong> <a href="mailto:%s">%s</a></li><li><strong>Dokümantasyon:</strong> <a href="%s" target="_blank" rel="noopener noreferrer">Kullanıcı Dokümantasyonu</a></li></ul>';
+$_['text_contact']                 = '<p>Daha fazla yardım için lütfen destek ekibimizle iletişime geçin:</p><ul><li><strong>Destek Web Sitesi:</strong> <a href="%1$s">%1$s</a></li><li><strong>GitHub Deposu:</strong> <a href="%2$s" target="_blank" rel="noopener noreferrer">%2$s</a></li><li><strong>Destekle İletişime Geçin:</strong> <a href="mailto:%3$s">%3$s</a></li></ul>';
 
 // Tab
 $_['tab_general']                  = 'Genel';
