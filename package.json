@@ -9,9 +9,15 @@
   "keywords": [
     "opencart",
     "opencart4",
+    "opencart-extension",
     "playfulsparkle",
     "google",
-    "review feed"
+    "product-review-feed",
+    "google-product-review-feed",
+    "google-merchant-center",
+    "customer-reviews",
+    "seller-rating",
+    "review-feed"
   ],
   "author": "zsoltoroszlany82 <zsolt.oroszlany@playfulsparkle.com>",
   "license": "GPL",
